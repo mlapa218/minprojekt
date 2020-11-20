@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+</head>
+
+<body>
+    <nav>
+        <a href="main">Główna</a>
+        <a href="login">Login</a>
+        <a href="register">Rejestracja</a>
+        <a href="admin">Admin</a>
+    </nav>
+    <form method="POST" action="/rejestracja">
+        <label for="login">Login:</label>
+        <input type="text" name="login" required>
+        <br>
+        <label for="haslo">Hasło:</label>
+
+        <input type="password" name="haslo" required>
+        <br>
+        <label for="wiek">Wiek: </label>
+        <select required name="wiek">
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+        </select>
+        <br>
+        <label for="uczen">Uczeń:</label>
+        <input type="checkbox" name="uczen">
+        <br>
+        <label for="plec">Płeć:</label>
+        <label for="#p1">K:</label>
+        <input type="radio" id="p1" name="plec" value="K" required>
+        <label for="#p2">M:</label>
+        <input type="radio" id="p2" value="M" name="plec">
+        <br>
+        <button type="submit">Zarejestruj</button>
+    </form>
+</body>
+
+</html>
